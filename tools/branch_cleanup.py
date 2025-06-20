@@ -24,7 +24,7 @@ def get_stale_branches():
         commit_data = requests.get(commit_url, headers=headers).json()
         commit_date = datetime.strptime(commit_data['commit']['author']['date'], '%Y-%m-%dT%H:%M:%SZ')
 
-        if datetime.utcnow() - commit_date > timedelta(days=30):
+        if datetime.utcnow() - commit_date > timedelta(days=1):
             stale.append(branch_name)
 
     return stale
