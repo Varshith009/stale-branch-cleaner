@@ -1,6 +1,6 @@
 #  Stale Branch Cleaner 
 
-Automatically deletes branches older than **30 days** daily using GitHub Actions.
+Automatically deletes branches older than **1 days (Testing purpose)** daily using GitHub Actions.
 
 ##  Setup
 
@@ -24,9 +24,5 @@ Automatically deletes branches older than **30 days** daily using GitHub Actions
 ##  Manual Trigger
 
 You can manually run this workflow via **Actions tab** → `Delete Stale Branches` → `Run workflow`
-
-##  AI Extension Ready
-
-Optionally integrate LangChain AI decision logic in `tools/branch_cleanup.py` if you want dynamic AI-based deletion rules.
 
 ---
